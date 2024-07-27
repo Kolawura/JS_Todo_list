@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgb(255, 196, 71), rgb(172, 239, 255),
+    rgb(201, 239, 255));
+}
+.app{
+    width: min(95vw, 30rem);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.7rem;
+}
+
+#wrapper{
+    background-color: aliceblue;
+    border-radius: 0.8rem;
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, 0.4);
+    height: auto;
+    padding: 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 1rem;
+}
+#wrapper input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    padding: 1em 0.5em;
+}
+#wrapper input:focus{
+    outline: none;
+    border-color: rgb(41, 178, 255);
+}
+#wrapper button{
+    background-color: rgb(41, 178, 255);
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#task{
+    background-color: rgb(190, 218, 243);
+    border-radius: 0.8rem;
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, 0.4);
+    color: #000;
+    max-height: 50vh;
+    overflow: hidden auto;
+    scroll-snap-type: y mandatory;
+    padding: 2rem 2.5rem;
+    scroll-padding: 2rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+    display: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;/* IE 10+ */
+}
+::-webkit-scrollbar{ 
+    width: 0;               /* Chrome/Safari/Webkit  */
+    background: transparent;
+}
+
+.todo-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.todo-list li{
+    column-gap: 4px;
+    display: flex;
+    padding: 0.6rem;
+    flex: 4;
+    padding: 6px;
+    overflow: auto hidden;
+    overflow-wrap: normal;
+}
+.todo-list button{
+    border-radius: 6px;
+    background-color: rgb(190, 218, 243);
+    font-weight: 900px;
+    font-size: large;
+    margin: 5px;
+    flex: 1;
+    height: 2rem;
+}
+.todo-list button:hover{
+    border-width: 3px;
+    font-size: 1.3rem;
+}
+.delBtn{
+    border-color: red;
+    color: red;
+}
+.editBtn{
+    border-color: blue;
+    color: blue;
+}
+.compBtn{
+    border-color: green;
+    color: green;
+}
+
+
+.error{
+    background-color: #fff;
+    border-radius: 0.8rem;
+    color: rgb(255, 0, 90);
+    font-size: 1.5em;
+    margin-top: 2rem;
+    padding: 1em;
+    text-align: center;
+    display: none;
+}
+footer{
+    color: #000;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
